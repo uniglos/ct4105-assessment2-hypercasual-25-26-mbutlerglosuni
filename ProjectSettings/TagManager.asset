@@ -9,6 +9,7 @@ TagManager:
   - fish3
   - fish4
   - fish5
+  - Fish
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - Floor
   - Water
   - UI
-  - 
+  - Boundary
   - 
   - 
   - 
