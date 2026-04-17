@@ -18,7 +18,6 @@ public class NewMonoBehaviourScript : MonoBehaviour
     {
         if( collision.gameObject.tag == "fish5")
         {
-            Debug.Log("collided");
             Destroy(gameObject);
         }
     }

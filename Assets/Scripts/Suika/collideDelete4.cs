@@ -2,23 +2,24 @@ using UnityEngine;
 
 public class collideDelete4 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public bool doNothing;
+    public GameObject fish5;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "fish4")
         {
-            Debug.Log("collided");
+            if (doNothing) return;
+
+            //destroys the first
+            collision.gameObject.GetComponent<collideDelete4>().doNothing = true;
+            Destroy(collision.gameObject);
+
+            //destroys the second and spawns a new fish
+            Instantiate(fish5, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.Euler(0, 0, -90));
+
             Destroy(gameObject);
+
         }
     }
 }

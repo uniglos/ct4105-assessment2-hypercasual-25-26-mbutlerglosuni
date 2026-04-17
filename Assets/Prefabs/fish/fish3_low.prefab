@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4192758432599821271}
   - component: {fileID: 5086948293720072293}
   - component: {fileID: 3886673017837069997}
+  - component: {fileID: 435845935770054645}
   m_Layer: 0
   m_Name: fish3_low
   m_TagString: fish3
@@ -28,13 +29,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4910548157862964460}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.5, y: 0.5, z: -0.5, w: 0.5}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -1.2448918, y: 7.888937e-24, z: 0.011341308}
-  m_LocalScale: {x: 0.312978, y: 0.582319, z: 0.31396902}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.3, y: 0.5581725, z: 0.30094996}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!33 &3800628021530573051
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -137,3 +138,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7200801416099628646, guid: 584219bbbe6d5884f9842bc05d55e1be, type: 3}
+--- !u!114 &435845935770054645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4910548157862964460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3982e3f0746e467468f549b863bd9c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doNothing: 0
+  fish4: {fileID: 5479114208592248690, guid: 6017f52dc3896424199dc905098e472c, type: 3}
