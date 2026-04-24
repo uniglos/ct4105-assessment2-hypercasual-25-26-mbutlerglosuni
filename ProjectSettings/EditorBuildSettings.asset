@@ -21,8 +21,11 @@ EditorBuildSettings:
     path: Assets/Scenes/shooter yay.unity
     guid: 62534d5b92df9d940a90a2c1334f04fb
   - enabled: 1
-    path: Assets/Scenes/Suika.unity
+    path: Assets/Scenes/Suika/Suika.unity
     guid: 5f7925298558e5a418353f7d2da26123
+  - enabled: 1
+    path: Assets/Scenes/Suika/GameOverSuika.unity
+    guid: 04f5ddc2c2036074194260a0314140e1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0

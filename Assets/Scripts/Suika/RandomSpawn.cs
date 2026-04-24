@@ -7,7 +7,7 @@ public class RandomSpawn : MonoBehaviour
 {
 
     private float timer;
-    private int pause =10;
+    private int pause =7;
     public GameObject fish1;//the fish that fall
     public GameObject fish2;
     public GameObject fish3;

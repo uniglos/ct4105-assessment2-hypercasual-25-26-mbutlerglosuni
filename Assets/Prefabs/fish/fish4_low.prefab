@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -7607559988503470531}
   - component: {fileID: 534873873822745806}
   - component: {fileID: 5728397116591994208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fish4_low
   m_TagString: fish4
   m_Icon: {fileID: 0}

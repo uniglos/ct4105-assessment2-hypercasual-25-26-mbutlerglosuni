@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5086948293720072293}
   - component: {fileID: 3886673017837069997}
   - component: {fileID: 435845935770054645}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fish3_low
   m_TagString: fish3
   m_Icon: {fileID: 0}
