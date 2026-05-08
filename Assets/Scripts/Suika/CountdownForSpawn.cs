@@ -1,12 +1,14 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 
 public class CountdownForSpawn : MonoBehaviour
 {
     public float timer = 7f;
-    public Text timerText;
+    
+    public TextMeshProUGUI timerText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

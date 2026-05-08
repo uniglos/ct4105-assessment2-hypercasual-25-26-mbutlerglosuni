@@ -1,9 +1,13 @@
 using UnityEngine;
+using TMPro;
 
 public class collideDelete1 : MonoBehaviour
 {
     public bool doNothing;
     public GameObject fish2;
+    public TextMeshProUGUI scoreText;
+
+
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -14,6 +18,7 @@ public class collideDelete1 : MonoBehaviour
             //destroys the first
             collision.gameObject.GetComponent<collideDelete1>().doNothing = true;
             Destroy(collision.gameObject);
+            
 
             //destroys the second and spawns a new fish
             Instantiate(fish2, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.Euler(0, 0, -90));
