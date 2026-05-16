@@ -19,6 +19,16 @@ public class RandomSpawn : MonoBehaviour
     bool fish2spawned = false;
     bool fish3spawned = false;
     public GameObject otter;
+    
+
+    public GameObject scoreManager;
+    private ScoreCount scoreCount;
+
+    private void Awake()
+    {
+        scoreManager = GameObject.Find("Score");
+        scoreCount = scoreManager.GetComponent<ScoreCount>();
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -41,9 +51,13 @@ public class RandomSpawn : MonoBehaviour
             if (!fish1spawned )
             {
                 
-                    Instantiate(fish1Still, new Vector3(transform.position.x+0.5f, transform.position.y, -4.9f), Quaternion.Euler(0, 0, 0), otter.transform); // spawn the not falling part
-                    fish1spawned = true;
+                Instantiate(fish1Still, new Vector3(transform.position.x+0.5f, transform.position.y, -4.9f), Quaternion.Euler(0, 0, 0), otter.transform); // spawn the not falling part
+                fish1spawned = true;
+                    
                 
+                
+                
+
             }
             
             if (timer >= pause)
@@ -52,6 +66,8 @@ public class RandomSpawn : MonoBehaviour
 
                 Instantiate(fish1, new Vector3(transform.position.x+0.5f, transform.position.y, -4.9f), Quaternion.Euler(0, 0, 90)); // spawn the fish that falls
                 timer = 0;
+                
+                scoreCount.dropped = true;
                 spawnRandom = Random.Range(1, 4);
                 fish1spawned = false;
                 return;
@@ -65,6 +81,9 @@ public class RandomSpawn : MonoBehaviour
             {
                 Instantiate(fish2Still, new Vector3(transform.position.x+0.5f, transform.position.y, -4.9f), Quaternion.Euler(0, 0, 0), otter.transform); // spawn the not falling part
                 fish2spawned = true;
+
+                
+                
             }
                 
             
@@ -74,6 +93,8 @@ public class RandomSpawn : MonoBehaviour
 
                 Instantiate(fish2, new Vector3(transform.position.x+0.5f, transform.position.y, -4.9f), Quaternion.Euler(0, 0, 90)); // spawn the fish that falls
                 timer = 0;
+                
+                scoreCount.dropped = true;
                 spawnRandom = Random.Range(1, 4);
                 fish2spawned = false;
                 return;
@@ -88,6 +109,8 @@ public class RandomSpawn : MonoBehaviour
             {
                 Instantiate(fish3Still, new Vector3(transform.position.x+0.5f, transform.position.y, -4.9f), Quaternion.Euler(0, 0, 0), otter.transform); // spawn the not falling part
                 fish3spawned = true;
+
+                
             }
             
             if (timer >= pause)
@@ -96,6 +119,8 @@ public class RandomSpawn : MonoBehaviour
 
                 Instantiate(fish3, new Vector3(transform.position.x+0.5f, transform.position.y, -4.9f), Quaternion.Euler(0, 0, 90)); // spawn the fish that falls
                 timer = 0;
+                
+                scoreCount.dropped = true;
                 spawnRandom = Random.Range(1, 4);
                 fish3spawned = false;
                 return; 

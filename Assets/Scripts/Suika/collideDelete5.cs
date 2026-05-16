@@ -2,22 +2,23 @@ using UnityEngine;
 
 public class NewMonoBehaviourScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public GameObject scoreManager;
+    private ScoreCount scoreCount;
+
+    
+
+    private void Awake()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        scoreManager = GameObject.Find("Score");
+        scoreCount = scoreManager.GetComponent<ScoreCount>();
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         if( collision.gameObject.tag == "fish5")
         {
+            scoreCount.increase5 = true;
+            
             Destroy(gameObject);
         }
     }

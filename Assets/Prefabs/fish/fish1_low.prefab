@@ -152,3 +152,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doNothing: 0
   fish2: {fileID: 2699044690618947178, guid: d4f0a488fd3c2f441a8ffa9bed21bc2e, type: 3}
+  scoreManager: {fileID: 0}
+  particle: {fileID: 0}
