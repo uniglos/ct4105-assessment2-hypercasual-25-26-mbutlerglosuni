@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine.SocialPlatforms.Impl;
 
@@ -10,7 +12,7 @@ public class collideDelete1 : MonoBehaviour
     public GameObject scoreManager;
     private ScoreCount scoreCount;
 
-    
+    public AudioSource audio;
 
     private void Awake()
     {
@@ -45,5 +47,8 @@ public class collideDelete1 : MonoBehaviour
             Destroy(gameObject);
 
         }
+        
+            audio.Play();
+        
     }
 }

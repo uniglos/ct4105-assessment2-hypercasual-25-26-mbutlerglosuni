@@ -1,6 +1,7 @@
 using UnityEngine;
-
-public class ReturnToMenu : MonoBehaviour
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+public class ReturnToMenu1 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -13,4 +14,10 @@ public class ReturnToMenu : MonoBehaviour
     {
         
     }
+
+    public void returntomenu()
+    {
+        SceneManager.LoadScene("LAUNCHSCREEN_MENU");
+    }
+
 }

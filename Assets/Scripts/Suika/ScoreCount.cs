@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using System.Collections.Generic;
 using TMPro;
 
 public class ScoreCount : MonoBehaviour
@@ -13,7 +14,11 @@ public class ScoreCount : MonoBehaviour
     public bool increase4 = false;
     public bool increase5 = false;
     public bool dropped=false;
-    
+
+
+    public AudioSource audio;
+
+
     //for particles
     public GameObject plus1object;
     public GameObject plus10object;
@@ -47,36 +52,42 @@ public class ScoreCount : MonoBehaviour
         {
             score += 10;//increase score by 10 when the 1st fishes collide
             plus10.Play();
+            audio.Play();
             increase1 = false;
         }
         if (increase2)
         {
             score += 20;//increase score by 20 when the 2nd fishes collide
             plus20.Play();
+            audio.Play();
             increase2 = false;
         }
         if (increase3)
         {
             score += 30;//increase score by 30 when the 3rd fishes collide
             plus30.Play();
+            audio.Play();
             increase3 = false;
         }
         if (increase4)//increase score by 40 when the 4th fishes collide
         {
             score += 40;
             plus40.Play();
+            audio.Play();
             increase4 = false;
         }
         if (increase5)//increase score by 100 when two whales collide
         {
             score += 100;
             plus100.Play();
+            audio.Play();
             increase5 = false;
         }
         if (dropped) //increase score by 1 when a fish is dropped
         {
             score += 1;
             plus1.Play();
+            
             dropped = false;
         }
         

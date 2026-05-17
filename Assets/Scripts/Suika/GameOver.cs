@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 
 public class GameOver : MonoBehaviour
@@ -25,7 +26,10 @@ public class GameOver : MonoBehaviour
             gameOver = true;
             
         }
-
+        if (gameOver)
+        {
+            SceneManager.LoadScene("GameOverSuika");
+        }
         
     }
     private void OnTriggerStay(Collider other)

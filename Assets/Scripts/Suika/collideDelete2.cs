@@ -12,7 +12,7 @@ public class collideDelete2 : MonoBehaviour
     public GameObject scoreManager;
     private ScoreCount scoreCount;
 
-    
+    public AudioSource audio;
 
     private void Awake()
     {
@@ -43,5 +43,6 @@ public class collideDelete2 : MonoBehaviour
             Destroy(gameObject);
 
         }
+        audio.Play();
     }
 }
