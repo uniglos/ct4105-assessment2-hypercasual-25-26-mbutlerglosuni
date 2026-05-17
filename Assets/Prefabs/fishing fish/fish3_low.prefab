@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2583362042163294312}
   - component: {fileID: 2014111521093439987}
   - component: {fileID: 3814207723635323634}
+  - component: {fileID: -6473252411502125088}
   m_Layer: 0
   m_Name: fish3_low
   m_TagString: Untagged
@@ -28,8 +29,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -1.2448918, y: 7.888937e-24, z: 0.011341308}
-  m_LocalScale: {x: 0.312978, y: 0.582319, z: 0.31396902}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.19, y: 0.35350922, z: 0.19060162}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
@@ -86,3 +87,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-6473252411502125088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2482919737580648170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f43743bf1166e439e70167ff85b68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goHere: {x: 0, y: 0, z: 0}
+  timer: 0
+  startTiming: 0
+  speed: 0

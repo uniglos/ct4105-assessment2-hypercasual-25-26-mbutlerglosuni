@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2208935104987927360}
   - component: {fileID: 3532735471485814909}
   - component: {fileID: 929723770167832600}
+  - component: {fileID: -3056760425599057707}
   m_Layer: 0
   m_Name: fish1_low
   m_TagString: Untagged
@@ -86,3 +87,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-3056760425599057707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7679336639741986675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42f43743bf1166e439e70167ff85b68c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  goHere: {x: 0, y: 0, z: 0}
+  timer: 0
+  startTiming: 0
+  speed: 0
