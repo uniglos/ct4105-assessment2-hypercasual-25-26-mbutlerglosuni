@@ -12,9 +12,12 @@ GameObject:
   - component: {fileID: 777376461627834766}
   - component: {fileID: 2790753807195811050}
   - component: {fileID: -538994895669684339}
+  - component: {fileID: 299463596167423542}
+  - component: {fileID: -5108711714580681309}
+  - component: {fileID: 4918111221041858074}
   m_Layer: 0
   m_Name: fish4_low
-  m_TagString: Untagged
+  m_TagString: fish4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,4 +105,67 @@ MonoBehaviour:
   goHere: {x: 0, y: 0, z: 0}
   timer: 0
   startTiming: 0
-  speed: 0
+  speed: 0.6
+  randomDespawn: 0
+  spawnmanager: {fileID: 0}
+  counter: {fileID: 0}
+--- !u!114 &299463596167423542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260019754396094389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf083ae4bff50447b7c85cf57dc2e69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!54 &-5108711714580681309
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260019754396094389}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 8
+  m_CollisionDetection: 0
+--- !u!65 &4918111221041858074
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260019754396094389}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.8122834, y: 1.1666809, z: 1.016}
+  m_Center: {x: -0.032845605, y: -0.1377746, z: 0}

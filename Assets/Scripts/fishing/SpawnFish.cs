@@ -21,7 +21,7 @@ public class SpawnFish : MonoBehaviour
     {
         timer += Time.deltaTime;
         
-        if (timer >= 10f && counter <= 10)
+        if (timer >= 7f && counter <= 10)
         {
             SpawnNewFish();
             timer = 0f;

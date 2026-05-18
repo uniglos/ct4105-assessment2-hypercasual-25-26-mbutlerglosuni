@@ -12,6 +12,7 @@ TagManager:
   - Fish
   - Still
   - otter
+  - hook
   layers:
   - Default
   - TransparentFX
