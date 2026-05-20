@@ -1019,7 +1019,7 @@ Transform:
   m_GameObject: {fileID: 1319443473}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.91, y: 1.27, z: 0}
+  m_LocalPosition: {x: -0.24, y: 5.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1389,8 +1389,8 @@ MonoBehaviour:
   gizmoCornerSize: {x: 1, y: 1, z: 1}
   gizmoColor: {r: 0, g: 1, b: 1, a: 1}
   gizmoCornerColor: {r: 0, g: 0, b: 1, a: 1}
-  corner1: {x: -17.1, y: -2.03, z: 0}
-  corner2: {x: 13.8, y: 6.84, z: 0}
+  corner1: {x: -17.1, y: -6.47, z: 0}
+  corner2: {x: 13.8, y: 8.58, z: 0}
   generatedObjects: []
   onGeneratedObjectsZero:
     m_PersistentCalls:
@@ -1419,7 +1419,7 @@ Transform:
   m_GameObject: {fileID: 1873795378}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.92288995, y: 4.8151126, z: -3.6165843}
+  m_LocalPosition: {x: 0.88, y: 4.8151126, z: -3.6165843}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
