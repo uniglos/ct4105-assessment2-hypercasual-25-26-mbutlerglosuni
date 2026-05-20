@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class ObjectSpawn : MonoBehaviour
 {
+    public GameObject amongus;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameObject amongus;
+        
         Instantiate(amongus, new Vector3(10, 10, 10), Quaternion.identity);
     }
 
